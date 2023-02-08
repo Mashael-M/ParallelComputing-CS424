@@ -1,4 +1,5 @@
 package triangular_series;
+
 import java.util.Scanner;
 import java.util.concurrent.*;
 
@@ -9,10 +10,12 @@ public class Triangular_series {
         System.out.print("Pleses Enter a positive number: ");
         //to get the user input
         int n = input.nextInt();
-        //to create 4 thread
-        ExecutorService executor = Executors.newFixedThreadPool(4);
+        
         //calculate the start time
         long StartTime = System.currentTimeMillis();
+        
+        //to create 4 thread
+        ExecutorService executor = Executors.newFixedThreadPool(4);
 
         // for loop to execute the thread 
         for (int i = 0; i < 4; i++) {
